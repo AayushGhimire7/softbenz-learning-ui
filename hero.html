@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Elearning Education</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav class="top-nav-background-color">
+      <section class="container flex-between" style="height: 48px">
+        <div class="flex flex-items-center" style="gap: 30px">
+          <button class="nav-enquiry-now-button">Enquiry Now</button>
+          <div class="nav-social-media-icons">
+            <img src="./assets/facebook.png" alt="facebook-icon" />
+            <img src="./assets/telegram.png" alt="telegram-icon" />
+            <img src="./assets/twitter.png" alt="twitter-icon" />
+            <img src="./assets/whatsapp.png" alt="whatsapp-icon" />
+          </div>
+        </div>
+
+        <div class="top-nav-info-details flex-items-center">
+          <div class="flex-items-center">
+            <img
+              src="./assets/call_24dp_FILL0_wght400_GRAD0_opsz24 (1).png"
+              alt="phone-icon"
+            />
+            <span class="info-details-text">Call Us At: 9780023457</span>
+          </div>
+          <div class="flex-items-center">
+            <img
+              src="./assets/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).png"
+              alt="mail-icon"
+            />
+            <span class="info-details-text"
+              >Mail Us At: elearning@gmail.com</span
+            >
+          </div>
+        </div>
+
+        <div class="download-details flex-items-center">
+          <span class="top-nav-download-info-details">Download Our App</span>
+          <div>
+            <img src="./assets/bxl-play-store 1.png" alt="playstore-icon" />
+          </div>
+          <div>
+            <img src="./assets/bxl-apple 1.png" alt="apple-icon" />
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <nav class="container main-nav flex-between">
+      <div class="flex-items-center">
+        <div class="hamburger" onclick="toggleDrawer()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a href="#" class="logo">
+          <img
+            src="./assets/site-logo-1615368348-removebg-preview 2.png"
+            alt="Elearning Logo"
+          />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Courses</a>
+        </li>
+        <li>
+          <a href="#">Free Material</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Notice</a>
+        </li>
+      </ul>
+      <div class="main-nav-end-section">
+        <button class="main-nav-btn-1">Free Trial</button>
+        <button class="main-nav-btn-2">Take Exam</button>
+        <button class="profile-btn">
+          <img
+            src="./assets/person_FILL0_wght400_GRAD0_opsz24 (7) 1.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </nav>
+
+    <section class="container">
+      <section class="hero">
+        <div class="content">
+          <p>Online Test Portal</p>
+          <h1>
+            Achieve Your Goal <br />
+            <span>With Elearning</span>
+          </h1>
+          <p>Unlock your potential with our user-friendly online test portal</p>
+          <div class="buttons">
+            <a class="btn-1" href="#">Take Exam</a>
+            <a class="btn-2" href="#">Buy Courses</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/hero-image.jpg" alt="Student with Laptop" />
+        </div>
+      </section>
+    </section>
+
+    <!-- mobile side drawer -->
+    <div class="side-drawer" id="sideDrawer">
+      <div onclick="toggleDrawer()" class="closeSidebarIcon">&times;</div>
+      <ul class="mobile-nav-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Courses</a>
+        </li>
+        <li>
+          <a href="#">Free Material</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Notice</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- carousel -->
+    <div style="background-color: #f1f5f9; padding-block: 100px;">
+      <div
+        class="container"
+        style="background-color: white; border-radius: 16px; padding-top: 30px"
+      >
+        <section class="section-title">
+          <button>Courses</button>
+          <h2>Achieve Your Goal With Elearning</h2>
+        </section>
+        <div class="courses-container">
+          <div class="mySlides courses fade">
+            <!-- Card 1 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Korean</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Korean</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Korean</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Korean</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides courses fade">
+            <!-- Card 1 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Japanese</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Japanese</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Japanese</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">Japanese</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides courses fade">
+            <!-- Card 1 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">English</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">English</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">English</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="courses-card">
+              <img src="./assets/Basic Book-2016 1.png" alt="Book Image" />
+              <div class="card-content">
+                <h3>Only Guide You Need To Pass The Exam</h3>
+                <p>
+                  Unlock a world of knowledge with seamless access to UBT's
+                  comprehensive
+                </p>
+                <span class="language-badge">English</span>
+                <br />
+                <button>View Courses</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us-content">
+          <div class="about-us-title">
+            <h4 class="about-text">About Us</h4>
+            <h2 class="discover">Discover Our Story:Empowering</h2>
+            <h2 class="discover">Learning Through E-Learning</h2>
+          </div>
+          <div class="about-us-cards">
+            <div class="about-us-card">
+              <div class="cards-icon">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <h5>Interactive Live Sessions</h5>
+              <p class="engage">Engage in real-time discussions</p>
+            </div>
+            <div class="about-us-card">
+              <div class="cards-icon">
+                <i class="fa fa-hourglass"></i>
+              </div>
+              <h5>Flexible Schedule</h5>
+              <p class="engage">Engage in real-time discussions</p>
+            </div>
+            <div class="about-us-card">
+              <div class="cards-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <h5>Personalized Learning</h5>
+              <p class="engage">Engage in real-time discussions</p>
+            </div>
+          </div>
+          <div>
+            <button class="learn-more-btn">Learn More About Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="below-aboutus">
+    </div>
+
+    <div class="free-material-bg">
+      <div class="container">
+        <section class="section-title">
+            <button>Free Material</button>
+            <h2>Access Your Free Material With Elearning</h2>
+          </section>
+        
+          <div class="courses">
+            <!-- Card 1 -->
+            <div class="free-material-card">
+              <img src="./assets/Mask group.png" alt="Book Image">
+              <div class="card-content">
+                <span class="card-content-top-text">Free Material</span>
+                <h3>Text Book Listening Track</h3>
+                <p>Total Lesson : 20</p>
+                <span class="language-badge">Korean</span>
+                <br>
+                <button>Access Material</button>
+              </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="free-material-card">
+              <img src="./assets/Mask group.png" alt="Book Image">
+              <div class="card-content">
+                <span class="card-content-top-text">Free Material</span>
+                <h3>Text Book Listening Track</h3>
+                <p>Total Lesson : 20</p>
+                <span class="language-badge">Korean</span>
+                <br>
+                <button>Access Material</button>
+              </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="free-material-card">
+              <img src="./assets/Mask group.png" alt="Book Image">
+              <div class="card-content">
+                <span class="card-content-top-text">Free Material</span>
+                <h3>Text Book Listening Track</h3>
+                <p>Total Lesson : 20</p>
+                <span class="language-badge">Korean</span>
+                <br>
+                <button>Access Material</button>
+              </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="free-material-card">
+              <img src="./assets/Mask group.png" alt="Book Image">
+              <div class="card-content">
+                <span class="card-content-top-text">Free Material</span>
+                <h3>Text Book Listening Track</h3>
+                <p>Total Lesson : 20</p>
+                <span class="language-badge">Korean</span>
+                <br>
+                <button>Access Material</button>
+              </div>
+            </div> 
+          </div>
+       </div>
+     </div>
+
+
+    <div class="free-material-bg">
+      <div class="container" style="background-color: white; padding-bottom: 50px;">
+        <section class="testimonial-title">
+            <button>Testimonials</button>
+            <h2>What Our Student Has to Say About Us</h2>
+          </section>
+  
+          <div class="testimonials-card">
+            <div class="testimonial-photos" >
+              <div>
+                <img src="./assets/person1.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/person2.png" alt="">
+              </div>
+            </div>
+            
+            <div class="testimonial-content">
+              <div>
+                <img class="person3" src="./assets/person3.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/format_quote 2.png" alt="">
+                <p class="testimonial-top-text">At Elearning, I found more than just a place to learn Korean; I found a community that fosters growth and success. The engaging classes and dedicated instructors not only improved my language skills but also boosted my confidence.</p>
+                <p class="testimonial-student">Saroj Dhungana</p>
+                <p class="testimonial-position">Student</p>
+              </div>
+            </div>
+            
+          </div>
+    </div>
+    </div>
+
+    <div class="faq-bg">
+      <div class="container">
+        <section class="faq-title">
+          <button>Common Question</button>
+          <h2>Most Popular Question</h2>
+        </section>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              How Does E-learning Work?
+              <span class="arrow">&#9654;</span>
+            </div>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <div class="faq-question">
+              Steps to Starting an E-commerce Business
+              <span class="arrow">&#9654;</span>
+            </div>
+            <div class="faq-answer">
+              Here are the basic steps to start an e-commerce business.
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <div class="faq-question">
+              Benefits of E-commerce
+              <span class="arrow">&#9654;</span>
+            </div>
+            <div class="faq-answer">
+              E-commerce helps you to expand your business globally.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Disadvantages of E-commerce
+              <span class="arrow">&#9654;</span>
+            </div>
+            <div class="faq-answer">
+              E-commerce helps you to expand your business globally.
+            </div>
+          </div>
+      
+      
+          <div class="faq-item">
+            <div class="faq-question">
+              Challenges of E-commerce
+              <span class="arrow">&#9654;</span>
+            </div>
+            <div class="faq-answer">
+              There are certain challenges in e-commerce like logistics and online security.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-section-bg">
+      <div class="container">
+          <div class="download-section">
+              <div class="">
+                  <img class="download-image" src="./assets/Screenshot 2025-03-28 162609.png" alt="">
+              </div>
+              <div>
+                  <p class="download-head-text" style="margin: 25px;">DOWNLOAD OUR APP</p>
+                  <p class="download-mid-text" style="margin: 25px;">Download and use our service through the app. Available both for android and apple users</p>
+                  <p class="download-bottom-text" style="margin: 25px;">E-Learning App</p>
+                  <div class="download-bottom-design">
+                      <div class="download-bottom-design-inside">
+                          <p style="margin: 0px;"><img src="./assets/bxl-apple 1.png" alt=""></p>
+                          <div>
+                              <p class="download-get" style="margin: 0px;">GET IT ON</p>
+                              <p class="download-playstore" style="margin: 0px;">Google Play</p>
+                          </div>
+                      </div>
+                      <div class="download-bottom-design-inside">
+                          <p style="margin: 0px;"><img src="./assets/bxl-apple 1.png" alt=""></p>
+                          <div>
+                              <p class="download-get" style="margin: 0px;">GET IT ON</p>
+                              <p class="download-playstore" style="margin: 0px;">Google Play</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="blog-bg">
+    <div class="container">
+        <section class="blog-title">
+            <button>Blog</button>
+            <h2>Achieve Your Goal With Elearning</h2>
+          </section>
+
+        <div  class="carousel">
+            <div class="members-desc" style="max-width: 360px;">
+                <div class="card-container">
+                    <img class="image-container-footer" src="./assets/Mask-group.png" alt="Image">
+                    <div class="card-content-blog">
+                        <p class="heading-7 category">Creative | 09/July</p>
+                        <p class="heading-8 category">Scoring at UBT Above 250</p>
+                        <p class="heading-9">Unlock your potential and excel at UBT by
+                            leveraging your unique strengths ....</p>
+                        <p class="heading-6"> Read More <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="members-desc" style="max-width: 360px;">
+                <div class="card-container">
+                    <img class="image-container-footer" src="./assets/Mask group (1).png" alt="Image">
+                    <div class="card-content-blog">
+                        <p class="heading-7 category">Creative | 09/July</p>
+                        <p class="heading-8 category">Scoring at UBT Above 250</p>
+                        <p class="heading-9">Unlock your potential and excel at UBT by
+                            leveraging your unique strengths ....</p>
+                        <p class="heading-6"> Read More <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="members-desc" style="max-width: 360px;">
+                <div class="card-container">
+                    <img class="image-container-footer" src="./assets/Mask group (2).png" alt="Image">
+                    <div class="card-content-blog">
+                        <p class="heading-7 category">Creative | 09/July</p>
+                        <p class="heading-8 category">Scoring at UBT Above 250</p>
+                        <p class="heading-9">Unlock your potential and excel at UBT by
+                            leveraging your unique strengths ....</p>
+                        <p class="heading-6"> Read More <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="members-desc" style="max-width: 360px;">
+                <div class="card-container">
+                    <img class="image-container-footer" src="./assets/Mask-group.png" alt="Image">
+                    <div class="card-content-blog">
+                        <p class="heading-7 category">Creative | 09/July</p>
+                        <p class="heading-8 category">Scoring at UBT Above 250</p>
+                        <p class="heading-9">Unlock your potential and excel at UBT by
+                            leveraging your unique strengths ....</p>
+                        <p class="heading-6"> Read More <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="upper-footer">
+        <div class="e-learning">
+          <img src="./assets/site-logo-1615368348-removebg-preview 2.png" alt="E-Learning" class="footer-image" />
+          <p>
+            provide convenient access to educa tional resources and courses
+            online, facilitating learning anytime, anywhere
+          </p>
+          <button class="footer-button">About Us</button>
+        </div>
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Notice</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="news-letter">
+          <h4>News letter</h4>
+          <p>Subscribe to our newsletter to get the latest news and updates</p>
+          <div class="input-container">
+            <input type="email" placeholder="Email Here" class="email-input" />
+            <button class="send-button">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower-footer">
+      <div class="container">
+        <div class="lower-footer-content">
+          <div class="social-links">
+            <a href="#" target="_blank" class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="icon">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#" target="_blank" class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="other-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function toggleDrawer() {
+        const sideDrawer = document.getElementById("sideDrawer");
+        sideDrawer.classList.toggle("open");
+      }
+
+      const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('true');
+      });
+    });
+    </script>
+  </body>
+</html>
